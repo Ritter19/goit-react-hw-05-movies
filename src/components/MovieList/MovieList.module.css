@@ -1,0 +1,37 @@
+.movieList {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+  gap: 20px;
+  list-style: none;
+  padding: 0;
+}
+
+.movieListItem {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.movieLink {
+  text-decoration: none;
+  color: inherit;
+}
+
+.movieImage {
+  width: 150px;
+  height: 225px;
+  object-fit: cover;
+  border-radius: 8px;
+  transition: transform 0.3s ease;
+}
+
+.movieImage:hover {
+  transform: scale(1.05);
+}
+
+.movieTitle {
+  margin-top: 10px;
+  font-size: 14px;
+  text-align: center;
+  font-weight: 600;
+}

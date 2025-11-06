@@ -1,0 +1,30 @@
+.loaderWrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50vh;
+}
+
+.loader {
+  width: fit-content;
+  font-size: 40px;
+  font-family: 'Courier New', monospace;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: #0000; /* Fully transparent fill */
+  -webkit-text-stroke: 1.5px #d4af37; /* Gold stroke (cinema accent) */
+  background: conic-gradient(#d4af37 0 0) 0/1ch 100% no-repeat text;
+  -webkit-background-clip: text;
+  background-clip: text;
+  animation: l14 1.5s steps(7, jump-none) infinite alternate;
+}
+
+.loader::before {
+  content: 'Loading';
+}
+
+@keyframes l14 {
+  to {
+    background-position: 100%;
+  }
+}
